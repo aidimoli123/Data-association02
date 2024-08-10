@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="RTE">
+      <UniqueIdentifier>{fd50b74e-c665-415a-9381-29baf0f20868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Applications">
+      <UniqueIdentifier>{ea1fac20-1f0d-40db-adf3-be712b47989e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTE\src">
+      <UniqueIdentifier>{c57c99f7-8510-4753-8647-c078ae27d824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTE\include">
+      <UniqueIdentifier>{7e7497b1-2780-4892-abec-6de8ffd5c9ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Applications\src">
+      <UniqueIdentifier>{c4949500-37ad-4f3f-804d-b3600446da16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Applications\include">
+      <UniqueIdentifier>{94bad5e2-b768-4bc6-842c-1c2dc1341ae5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Applications\src\cluster.cpp">
+      <Filter>Applications\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Applications\src\detectionMem.cpp">
+      <Filter>Applications\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Applications\src\initVars.cpp">
+      <Filter>Applications\src</Filter>
+    </ClCompile>
+    <ClCompile Include="sw.cpp" />
+    <ClCompile Include="Applications\src\utils.cpp">
+      <Filter>Applications\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Applications\src\canfromego.cpp">
+      <Filter>Applications\src</Filter>
+    </ClCompile>
+    <ClCompile Include="RTE\src\rte.cpp">
+      <Filter>RTE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Applications\src\3DBoxMap2D.cpp">
+      <Filter>Applications\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="version.txt" />
+    <Text Include="VS_Config_interpretation.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RTE\include\rte.hpp">
+      <Filter>RTE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Applications\include\initVars.hpp">
+      <Filter>Applications\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Applications\include\utils.hpp">
+      <Filter>Applications\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Applications\include\canfromego.hpp">
+      <Filter>Applications\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Applications\include\3DBoxMap2D.hpp">
+      <Filter>Applications\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

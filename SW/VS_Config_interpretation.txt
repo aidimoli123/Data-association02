@@ -1,0 +1,24 @@
+注：由于不同的电脑中C++库的安装位置不同，以及其它某些未知原因，不同的用户clone下来需要重新配置工程的一些选项。
+以下针对已发现的VS配置说明：环境：win10  IDE: VS2019。
+尽量使用相对路径和VS中已有宏的配置，以下配置仅针对x64平台，同等适用于Debug和Release。
+
+# 配置可执行文件输出文件夹
+Configuration Properties-->General-->Output Directory: 	$(ProjectDir)bin\$(Configuration)\
+
+# 配置C++标准
+General-->C++ Language Standard: 	ISO C++14 Standard (std:c++14)
+
+# 配置include文件夹 (General-->VC++ Directories)
+$(ProjectDir)RTE\include\
+$(ProjectDir)Applications\include\	
+$(ProjectDir)3rd_Party\
+#下列两项针对不同的电脑选择不同的文件夹，将PC上的C++标准库添加
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\
+
+可能会出现的错误提示及解决方案：
+Q: vs2019 fatal error C1090: PDB API “3“
+A: 把输出文件名改一下，eg: 修改文件 C/C++ --> Output Files --> Program Database File Name 为：$(IntDir)vc$(PlatformToolsetVersion)_temp.pdb
+Link: https://blog.csdn.net/YuHengZuo/article/details/108200006
