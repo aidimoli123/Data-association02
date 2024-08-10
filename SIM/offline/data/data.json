@@ -1,0 +1,9 @@
+{
+	"sample_num":38,
+	"sample_interval":0.5,
+    "camera_pth": "D:\\Projects\\set-sail2\\SIM\\offline\\data\\camera",
+    "radar_pth": "D:\\Projects\\set-sail2\\SIM\\offline\\data\\radar_ascii\\radar_points.json",
+    "true_pth": "D:\\Projects\\set-sail2\\SIM\\offline\\data\\true\\anns.json",
+    "sensor_args":"D:\\Projects\\set-sail2\\SIM\\offline\\data\\args_of_sensor\\sensors_args.json",
+	"anns_2D":"D:\\Projects\\set-sail2\\SIM\\offline\\data\\true\\map_anns_in_radar.json"
+}
